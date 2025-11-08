@@ -8,13 +8,15 @@
     "start": "node dist/server.js",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx --env-file=.env src/db/seed.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.19.0",
   "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
     "@types/node": "^24.9.1",
     "@types/pg": "^8.15.6",
     "drizzle-kit": "^0.31.6",
